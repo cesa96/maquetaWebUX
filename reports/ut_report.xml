@@ -1,0 +1,118 @@
+<testExecutions version="1">
+  <file path="src/app/service/test/artwork.service.spec.ts">
+    <testCase name="Service: Artwork should get artists" duration="11"/>
+    <testCase name="Service: Artwork should Service Artist" duration="3"/>
+  </file>
+  <file path="src/app/view/main/artwork-detail/artwork-detail.component.spec.ts">
+    <testCase name="ArtworkDetailComponent artist birthplace should be present" duration="35"/>
+    <testCase name="ArtworkDetailComponent artist name should be present" duration="7"/>
+    <testCase name="ArtworkDetailComponent should create" duration="5"/>
+    <testCase name="ArtworkDetailComponent artist birthdate should be present" duration="3"/>
+    <testCase name="ArtworkDetailComponent artist image should be present" duration="4"/>
+  </file>
+  <file path="src/app/view/main/museum-create/museum-create.component.spec.ts">
+    <testCase name="MuseumCreateComponent should exists 5 labels inside the form" duration="38"/>
+    <testCase name="MuseumCreateComponent should have a form element" duration="9"/>
+    <testCase name="MuseumCreateComponent should create" duration="5"/>
+  </file>
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should have as title 'museums-front'" duration="4"/>
+    <testCase name="AppComponent should create the app" duration="3"/>
+  </file>
+  <file path="src/app/view/main/movement-create/movement-create.component.spec.ts">
+    <testCase name="MovementCreateComponent should create" duration="20"/>
+    <testCase name="MovementCreateComponent should exists 4 labels inside the form" duration="6"/>
+    <testCase name="MovementCreateComponent should have a form element" duration="5"/>
+  </file>
+  <file path="src/app/view/main/artwork-detail/artwork-detail.component.spec.ts">
+    <testCase name="ArtworkDetailComponent artwork name should be present" duration="7"/>
+    <testCase name="ArtworkDetailComponent artwork description should be present" duration="4"/>
+    <testCase name="ArtworkDetailComponent should create" duration="2"/>
+    <testCase name="ArtworkDetailComponent artwork year should be present" duration="3"/>
+    <testCase name="ArtworkDetailComponent artwork image should be present" duration="3"/>
+  </file>
+  <file path="src/app/service/test/sponsor.service.spec.ts">
+    <testCase name="Service: Sponsor should ..." duration="2"/>
+  </file>
+  <file path="src/app/view/main/exhibition-list/exhibition-list.component.spec.ts">
+    <testCase name="ExhibitionListComponent Debe tener dos filas " duration="14"/>
+    <testCase name="ExhibitionListComponent should create" duration="10"/>
+  </file>
+  <file path="src/app/view/main/artwork-list/artwork-list.component.spec.ts">
+    <testCase name="ArtworkListComponent should create" duration="10"/>
+    <testCase name="ArtworkListComponent should be an link element" duration="5"/>
+  </file>
+  <file path="src/app/view/main/exhibition-detail/exhibition-detail.component.spec.ts">
+    <testCase name="ExhibitionDetailComponent should create" duration="20"/>
+    <testCase name="ExhibitionDetailComponent Debe tener dos filas " duration="8"/>
+  </file>
+  <file path="src/app/view/main/artist-create/artist-create.component.spec.ts">
+    <testCase name="ArtistCreateComponent should exists 4 labels inside the form" duration="14"/>
+    <testCase name="ArtistCreateComponent should create" duration="7"/>
+    <testCase name="ArtistCreateComponent should have a form element" duration="8"/>
+  </file>
+  <file path="src/app/app.http.interceptor.spec.ts">
+    <testCase name="Service: AppHttpInterceptor should increment the counter request" duration="2"/>
+  </file>
+  <file path="src/app/view/main/museum-detail/museum-detail.component.spec.ts">
+    <testCase name="MuseumDetailComponent should create" duration="11"/>
+    <testCase name="MuseumDetailComponent Museum description should be present" duration="6"/>
+    <testCase name="MuseumDetailComponent Museum name should be present" duration="5"/>
+    <testCase name="MuseumDetailComponent Museum image should be present" duration="5"/>
+    <testCase name="MuseumDetailComponent Museum address should be present" duration="6"/>
+  </file>
+  <file path="src/app/view/main/museum-list/museum-list.component.spec.ts">
+    <testCase name="MuseumListComponent should create" duration="9"/>
+    <testCase name="MuseumListComponent should be an link element" duration="4"/>
+  </file>
+  <file path="src/app/app.error.handler.spec.ts">
+    <testCase name="AppErrorHandler should handle errors should handle TypeError" duration="3"/>
+    <testCase name="AppErrorHandler should handle errors should handle Error" duration="2"/>
+    <testCase name="AppErrorHandler should handle errors should handle HttpErrorResponse" duration="2"/>
+    <testCase name="AppErrorHandler should handle errors should handle default" duration="2"/>
+    <testCase name="AppErrorHandler create should create service" duration="2"/>
+  </file>
+  <file path="src/app/service/test/museum.service.spec.ts">
+    <testCase name="Service: Museum should ..." duration="2"/>
+  </file>
+  <file path="src/app/service/test/movement.service.spec.ts">
+    <testCase name="MovementService should be created" duration="1"/>
+  </file>
+  <file path="src/app/service/test/exhibition.service.spec.ts">
+    <testCase name="Service: Exhibition should ..." duration="1"/>
+  </file>
+  <file path="src/app/service/test/artwork.service.spec.ts">
+    <testCase name="Service: Artwork should get artworks by artist" duration="1"/>
+    <testCase name="Service: Artwork should get artworks" duration="2"/>
+    <testCase name="Service: Artwork should Service Artwork" duration="2"/>
+  </file>
+  <file path="src/app/view/main/artwork-list/artwork-list.component.spec.ts">
+    <testCase name="ArtworkListComponent should create" duration="8"/>
+    <testCase name="ArtworkListComponent should be an link element" duration="6"/>
+  </file>
+  <file path="src/app/view/main/exhibition-detail/exhibition-artwork-list/exhibition-artwork-list.component.spec.ts">
+    <testCase name="ExhibitionArtworkListComponent Debe tener dos filas " duration="11"/>
+    <testCase name="ExhibitionArtworkListComponent should create" duration="7"/>
+  </file>
+  <file path="src/app/view/main/museum-principal/museum-principal.component.spec.ts">
+    <testCase name="MuseumPrincipalComponent should create" duration="8"/>
+  </file>
+  <file path="src/app/view/main/artwork-create/artwork-create.component.spec.ts">
+    <testCase name="ArtworkCreateComponent should create" duration="19"/>
+    <testCase name="ArtworkCreateComponent should have a form element" duration="10"/>
+    <testCase name="ArtworkCreateComponent should exists 5 labels inside the form" duration="7"/>
+  </file>
+  <file path="src/app/view/main/sponsor-create/sponsor-create.component.spec.ts">
+    <testCase name="SponsorCreateComponent should create" duration="13"/>
+    <testCase name="SponsorCreateComponent should exists 5 labels inside the form" duration="4"/>
+    <testCase name="SponsorCreateComponent should have a form element" duration="3"/>
+  </file>
+  <file path="src/app/view/main/exhibition-create/exhibition-create.component.spec.ts">
+    <testCase name="ExhibitionCreateComponent should create" duration="11"/>
+    <testCase name="ExhibitionCreateComponent should have a form element" duration="4"/>
+    <testCase name="ExhibitionCreateComponent should exists 5 labels inside the form" duration="5"/>
+  </file>
+  <file path="src/app/view/main/museum-detail/museum-exhibition-list/museum-exhibition-list.component.spec.ts">
+    <testCase name="MuseumExhibitionListComponent should create" duration="3"/>
+  </file>
+</testExecutions>

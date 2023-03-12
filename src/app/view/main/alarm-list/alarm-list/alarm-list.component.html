@@ -1,0 +1,52 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+  <!-- Name Column -->
+  <ng-container matColumnDef="name" style="background-color:#2C1092">
+    <th mat-header-cell *matHeaderCellDef="primary" style="background-color:#2C1092">
+      <div class="row col-12">
+        <div class="col-md-9" style="color:white;background-color:#2C1092">Alarmas</div>
+        <div class="col-md-3" style="background-color:#2C1092">
+          <button mat-icon-button style="background-color:#2C1092;color:white" aria-label="add row"
+            [routerLink]="['/in',{outlets:{secondchildren:'alarm-detail'}}]">
+            <mat-icon>add_circle</mat-icon>
+            Agregar
+          </button>
+        </div>
+      </div>
+    </th>
+    <td mat-cell *matCellDef="let element">{{element.name}}</td>
+  </ng-container>
+  <ng-container matColumnDef="delete">
+    <th mat-header-cell *matHeaderCellDef aria-label="row actions" style="background-color:#2C1092">&nbsp;</th>
+    <td mat-cell *matCellDef="let element">
+      <button mat-icon-button aria-label="delete row" (click)="eliminar()">
+        <mat-icon>remove_circle</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+  <ng-container matColumnDef="expand">
+    <th mat-header-cell *matHeaderCellDef aria-label="row actions" style="background-color:#2C1092">&nbsp;</th>
+    <td mat-cell *matCellDef="let element">
+      <button mat-icon-button aria-label="expand row" [routerLink]="['/in',{outlets:{secondchildren:'alarm-detail'}}]">
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<div class="row col-12" style="margin-top:2em;text-align:center">
+  <div class="form-group col-md-6" >
+    <button type='button' mat-icon-button style="background-color:white; color:rgb(53, 51, 51)" aria-label="add row"
+      [routerLink]="['/in',{outlets:{secondchildren:'alarm-order'}}]">
+      <mat-icon>autorenew</mat-icon>
+      Ordenar
+    </button>
+  </div>
+    <div class="form-group col-md-6" >
+
+          <button type='button' mat-raised-button color="accent"
+      [routerLink]="['/in',{outlets:{firtschildren: ['activity-list'], secondchildren:['activity-detail']}}]">Cancelar</button>
+  </div>
+</div>

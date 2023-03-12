@@ -1,0 +1,86 @@
+<div class="main-content">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="content">
+
+            <div class="container mt-4" style="text-align: center;">
+              <div class="logo-img">
+                <img id='logoPage' src="/assets/img/ICON.png" alt="Aplicación para actividades" />
+              </div>
+              <form id="new-document" class="row">
+                <div class="row">
+                  <div class="form-group col-md-2"></div>
+
+                  <div class="form-group col-md-4">
+                    <mat-form-field class="col-12 col-md-12">
+                      <mat-label for>Usuario</mat-label>
+                      <input matInput placeholder="Ingrese el Usuario" value="">
+                    </mat-form-field>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <mat-form-field class="col-12 col-md-12">
+                      <mat-label for>Correo</mat-label>
+                      <input matInput placeholder="Ingrese el Correo" value="">
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-2"></div>
+
+                  <div class="form-group col-md-4">
+                    <mat-form-field class="col-12 col-md-12">
+                      <mat-label for>Constraseña:</mat-label>
+                      <input matInput placeholder="Contraseña" value="">
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <mat-form-field class="col-12 col-md-12">
+                      <mat-label for>Confirmar Constraseña:</mat-label>
+                      <input matInput placeholder="Confirmar Contraseña" value="">
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-2"></div>
+
+                  <div class="form-group col-md-4">
+                    <mat-form-field class="col-12 col-md-12">
+                      <mat-label for>Teléfono:</mat-label>
+                      <input matInput placeholder="Ingrese teléfono" value="">
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <mat-form-field class="col-12 col-md-12">
+                      <mat-label for>Nombre Completo</mat-label>
+                      <input matInput placeholder="Ingrese el nombre" value="">
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-4"></div>
+                  <div class="form-group col-md-4" style="text-align: center;">
+                    <button type='button' mat-raised-button color="primary"  (click)="openDialog()">REGISTRAR</button>
+                  </div>
+                  <div class="form-group col-md-4"></div>
+                  <div class="form-group col-md-4"></div>
+                  <div class="form-group col-md-4">
+                    <a style="font-size: 10px;" class="col-4 col-md-4" mat-flat-button
+                    [routerLink]="['',{outlets:{secondchildren:'login'}}]">Login</a>
+                  </div>
+                </div>
+              </form>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

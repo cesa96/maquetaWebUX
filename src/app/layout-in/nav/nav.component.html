@@ -1,0 +1,86 @@
+<nav class="navbar navbar-default navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <div class="navbar-minimize"></div>
+    <div class="navbar-header" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+      <span
+        i18n
+        i18n-data-tooltip
+        class="navbar-brand"
+        data-tooltip="List museums"
+        data-tooltip-location="bottom"
+        [routerLink]="['',{outlets: { firtschildren: [ 'museum-list'], secondchildren: ['museum-principal'] }}]"
+        [skipLocationChange]="true">Museums</span>
+
+      <span
+        i18n
+        i18n-data-tooltip
+        class="navbar-brand"
+        data-tooltip="List exhibitions"
+        data-tooltip-location="bottom"
+        [routerLink]="['',{outlets:{firtschildren:'exhibition-list'}}]"
+        [queryParams]="{museumId:'100'}"
+        [skipLocationChange]="true">Exhibitions</span>
+
+      <span
+        i18n
+        i18n-data-tooltip
+        class="navbar-brand"
+        data-tooltip="List artworks"
+        data-tooltip-location="bottom"
+        [routerLink]="['',{outlets:{firtschildren:'artwork-list'}}]"
+        [skipLocationChange]="true">Artworks</span>
+
+      <span
+        i18n
+        i18n-data-tooltip
+        class="navbar-brand"
+        data-tooltip="List artists"
+        data-tooltip-location="bottom"
+        [routerLink]="['',{outlets:{firtschildren:'artist-list'}}]"
+        [skipLocationChange]="true">Artists</span>
+
+    </div>
+
+    <div class="dropdown">
+      <button
+        type="button" style="color: white; font-size: 16px;" class="btn btn-secondary dropdown-toggle"
+        id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0"
+        i18n>Administration</button>
+
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+        <li>
+          <a class="dropdown-item"
+             i18n
+             [routerLink]="['',{outlets:{secondchildren:'museum-create'}}]"
+             [skipLocationChange]="true">Create Museum</a>
+        </li>
+        <li>
+          <a class="dropdown-item"
+             i18n
+             [routerLink]="['',{outlets:{secondchildren:'artwork-create'}}]"
+             [skipLocationChange]="true">Create Artwork</a>
+        </li>
+        <li>
+          <a class="dropdown-item"
+             i18n
+             [routerLink]="['',{outlets:{secondchildren:'artist-create'}}]"
+             [skipLocationChange]="true">Create Artist</a>
+        </li>
+        <li>
+          <a class="dropdown-item"
+             i18n
+             [routerLink]="['',{outlets:{secondchildren:'sponsor-create'}}]"
+             [skipLocationChange]="true">Create Sponsor</a>
+        </li>
+        <li>
+          <a class="dropdown-item"
+             i18n
+             [routerLink]="['',{outlets:{secondchildren:'movement-create'}}]"
+             [skipLocationChange]="true">Create Movement</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+

@@ -1,0 +1,84 @@
+<div class="main-content">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="content">
+
+            <div class="container mt-4" style="text-align: center;">
+              <h1>Actividad</h1>
+                            <div class="logo-img">
+                <img id='logoPage' src="/assets/img/ICON.png" alt="Aplicación para actividades" />
+              </div>
+              <form id="new-document" class="row">
+                <div class="row">
+                  <div class="form-group col-md-2"></div>
+
+                  <div class="form-group col-md-4">
+                    <mat-form-field class="col-12 col-md-12">
+                      <mat-label for>Nombre</mat-label>
+                      <input matInput placeholder="Ingrese el Nombre" value="">
+                    </mat-form-field>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <mat-form-field class="col-12 col-md-12">
+                      <mat-label for>Correo</mat-label>
+                      <input matInput placeholder="Ingrese la hora" value="">
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-2"></div>
+
+                  <div class="form-group col-md-4">
+                    <mat-form-field class="col-12 col-md-12">
+                      <mat-label for>Fecha de Inicio</mat-label>
+                      <input matInput placeholder="Fecha de Inicio" value="">
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <mat-form-field class="col-12 col-md-12">
+                      <mat-label for>Fecha Fin</mat-label>
+                      <input matInput placeholder="Fecha Fin" value="">
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-2"></div>
+
+                  <div class="form-group ">
+                    <mat-checkbox  (ngModel)="true" color="primary">Lunes</mat-checkbox>
+                    <mat-checkbox style="margin-left: 1em;" (ngModel)="false" color="primary">Martes</mat-checkbox>
+                    <mat-checkbox style="margin-left: 1em;" (ngModel)="false" color="primary">Miercoles</mat-checkbox>
+                    <mat-checkbox style="margin-left: 1em;" (ngModel)="false" color="primary">Jueves</mat-checkbox>
+                    <mat-checkbox style="margin-left: 1em;" (ngModel)="false" color="primary">Viernes</mat-checkbox>
+                    <mat-checkbox style="margin-left: 1em;" (ngModel)="false" color="primary">Sábado</mat-checkbox>
+                    <mat-checkbox style="margin-left: 1em;" (ngModel)="false" color="primary">Domingo</mat-checkbox>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-4"></div>
+                  <div class="form-group col-md-4" style="text-align: center;">
+                    <button style="margin-left: 1em;"  (click)="guardar()" type='button' mat-raised-button color="primary">Guardar</button>
+                    <button style="margin-left: 1em;" (click)="cancelar()" type='button' mat-raised-button
+                      color="accent">Cancelar</button>
+                  </div>
+                  <div class="form-group col-md-4"></div>
+                  <div class="form-group col-md-4"></div>
+                  <div class="form-group col-md-4">
+                    <a style="font-size: 10px;" class="col-4 col-md-4" mat-flat-button
+                      [routerLink]="['/in',{outlets:{firtschildren: ['alarm-list'], secondchildren:[]}}]">Ver Alarmas</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

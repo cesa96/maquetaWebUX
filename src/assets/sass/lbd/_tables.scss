@@ -1,0 +1,80 @@
+.table{
+
+   .radio,
+   .checkbox{
+        position: relative;
+        height: 20px;
+        display: block;
+        padding: 0px 0px;
+        margin: 0px 5px;
+        text-align: center;
+
+        .icons{
+            left: 5px;
+        }
+   }
+   > thead > tr > th,
+   > tbody > tr > th,
+   > tfoot > tr > th,
+   > thead > tr > td,
+   > tbody > tr > td,
+   > tfoot > tr > td{
+       padding: 8px 8px;
+       vertical-align: middle;
+   }
+
+    > thead > tr > th{
+        border-bottom-width: 1px;
+        font-size:  $font-size-base;
+        text-transform: uppercase;
+        color: $black-hr;
+        font-weight: $font-weight-bold;
+        padding-bottom: 5px;
+        cursor: pointer;
+        &:hover{
+            @include opacity(0.36);
+        }
+    }
+
+    > thead > tr > th> a{
+        font-weight: $font-weight-bold;
+    }
+
+    > thead > tr > th> a> i{
+        padding-left: 5px;
+        font-size: 14px;
+        font-weight: $font-weight-bold;
+    }
+    > tbody > tr > td{
+        font-size: $font-size-base;
+        min-width: 153px;
+    }
+
+   .td-actions .btn{
+        @include opacity(0.36);
+
+        &.btn-xs{
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+    }
+    .td-actions{
+        min-width: 200px;
+    }
+
+    > tbody > tr{
+        position: relative;
+
+        &:hover{
+            .td-actions .btn{
+                @include opacity(1);
+            }
+        }
+
+
+    }
+
+
+}
+
+
